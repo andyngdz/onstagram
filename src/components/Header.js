@@ -18,6 +18,10 @@ const useStyle = makeStyles((theme) => ({
     gridAutoFlow: "column",
     gridGap: theme.spacing(2),
   },
+  header: {
+    fontFamily: "Great Vibes",
+    fontWeight: "bold",
+  },
 }));
 
 const Header = () => {
@@ -27,7 +31,9 @@ const Header = () => {
     <AppBar color="transparent" variant="outlined" position="sticky">
       <Toolbar className={style.root}>
         <Box>
-          <Typography variant="h5">Instagram</Typography>
+          <Typography variant="h4" className={style.header}>
+            Onstagram
+          </Typography>
         </Box>
         <Box className={style.box}>
           <Home />
